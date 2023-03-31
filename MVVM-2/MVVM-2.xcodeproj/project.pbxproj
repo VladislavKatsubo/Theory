@@ -78,6 +78,7 @@
 			children = (
 				0DFC2645292E39E3001926FA /* AppDelegate.swift */,
 				0DFC2647292E39E3001926FA /* SceneDelegate.swift */,
+				0DFC2675292E5EE3001926FA /* Box.swift */,
 				0DFC2668292E462D001926FA /* Protocols */,
 				0DFC2661292E3E77001926FA /* Model */,
 				0DFC2662292E3E7C001926FA /* View */,
@@ -86,7 +87,6 @@
 				0DFC264E292E39E5001926FA /* Assets.xcassets */,
 				0DFC2650292E39E5001926FA /* LaunchScreen.storyboard */,
 				0DFC2653292E39E5001926FA /* Info.plist */,
-				0DFC2675292E5EE3001926FA /* Box.swift */,
 			);
 			path = "MVVM-2";
 			sourceTree = "<group>";
