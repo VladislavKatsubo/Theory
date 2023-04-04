@@ -20,7 +20,6 @@
 		0D0F299929D892D0002A2A04 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F299829D892D0002A2A04 /* ArticleDetailsViewController.swift */; };
 		0D0F299B29D892D8002A2A04 /* ArticleDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F299A29D892D8002A2A04 /* ArticleDetailsPresenter.swift */; };
 		0D0F299D29D892E0002A2A04 /* ArticleDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F299C29D892E0002A2A04 /* ArticleDetailsInteractor.swift */; };
-		0D0F299F29D892E9002A2A04 /* ArticleDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0F299E29D892E9002A2A04 /* ArticleDetailsRouter.swift */; };
 		0D861E9229D9D2F900352D1E /* ArticleDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D861E9129D9D2F900352D1E /* ArticleDetailsFactory.swift */; };
 		0D861E9529DA098000352D1E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D861E9429DA098000352D1E /* ImageService.swift */; };
 		0D861E9729DA12DE00352D1E /* ArticlesListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D861E9629DA12DE00352D1E /* ArticlesListConfigurator.swift */; };
@@ -45,7 +44,6 @@
 		0D0F299829D892D0002A2A04 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		0D0F299A29D892D8002A2A04 /* ArticleDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsPresenter.swift; sourceTree = "<group>"; };
 		0D0F299C29D892E0002A2A04 /* ArticleDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsInteractor.swift; sourceTree = "<group>"; };
-		0D0F299E29D892E9002A2A04 /* ArticleDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsRouter.swift; sourceTree = "<group>"; };
 		0D861E9129D9D2F900352D1E /* ArticleDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsFactory.swift; sourceTree = "<group>"; };
 		0D861E9429DA098000352D1E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		0D861E9629DA12DE00352D1E /* ArticlesListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListConfigurator.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				0D0F299829D892D0002A2A04 /* ArticleDetailsViewController.swift */,
 				0D0F299C29D892E0002A2A04 /* ArticleDetailsInteractor.swift */,
 				0D0F299A29D892D8002A2A04 /* ArticleDetailsPresenter.swift */,
-				0D0F299E29D892E9002A2A04 /* ArticleDetailsRouter.swift */,
 				0D861E9129D9D2F900352D1E /* ArticleDetailsFactory.swift */,
 			);
 			path = ArticleDetails;
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAFB49E29D8892C006A169F /* ViewController.swift in Sources */,
-				0D0F299F29D892E9002A2A04 /* ArticleDetailsRouter.swift in Sources */,
 				0D0F299129D8927B002A2A04 /* ArticlesListViewController.swift in Sources */,
 				0D0F299329D89283002A2A04 /* ArticlesListPresenter.swift in Sources */,
 				0D0F299D29D892E0002A2A04 /* ArticleDetailsInteractor.swift in Sources */,
