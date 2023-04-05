@@ -35,15 +35,6 @@ final class ArticleDetailsPresenter: ArticleDetailsPresentationLogic {
         viewController?.displayImage(with: image)
     }
 
-//    func dateFormatter(for string: String) -> String? {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateStyle = .medium
-//        dateFormatter.timeStyle = .none
-//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-//        guard let date = dateFormatter.date(from: string) else { return nil }
-//        return dateFormatter.string(from: date)
-//    }
-
     private func formatDate(from dateString: String) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

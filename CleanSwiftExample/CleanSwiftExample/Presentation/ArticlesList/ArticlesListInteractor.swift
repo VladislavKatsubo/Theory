@@ -11,25 +11,23 @@ protocol ArticlesListBusinessLogic: AnyObject {
     func fetchArticles(request: ArticlesList.FetchArticles.Request)
 }
 
-class ArticlesListInteractor {
-    private let apiService: APIServiceProtocol
+class ArticlesListInteractor: ArticlesListBusinessLogic {
     private let presenter: ArticlesListPresentationLogic
+    private let newsRepository: NewsRepositoryProtocol
 
-    init(presenter: ArticlesListPresentationLogic, apiService: APIServiceProtocol) {
+    init(presenter: ArticlesListPresentationLogic, newsRepository: NewsRepositoryProtocol) {
         self.presenter = presenter
-        self.apiService = apiService
+        self.newsRepository = newsRepository
     }
-}
 
-extension ArticlesListInteractor: ArticlesListBusinessLogic {
     func fetchArticles(request: ArticlesList.FetchArticles.Request) {
-        apiService.fetchTopHeadlines { [weak self] result in
+        newsRepository.fetchTopHeadlines { result in
             switch result {
-            case .success(let response):
-                let response = ArticlesList.FetchArticles.Response(articles: response)
-                self?.presenter.presentArticles(response: response)
+            case .success(let articles):
+                let response = ArticlesList.FetchArticles.Response(articles: articles)
+                self.presenter.presentArticles(response: response)
             case .failure(let error):
-                self?.presenter.presentError(error)
+                self.presenter.presentError(error)
             }
         }
     }
